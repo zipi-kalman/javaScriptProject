@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="./bootstrap-4.5.0-dist/css/bootstrap-reboot.min.css">
+
+<link rel="stylesheet" href="./bootstrap-4.5.0-dist/css/bootstrap.css">
+
+<link rel="stylesheet" href="./bootstrap-4.5.0-dist/css/bootstrap-grid.css">
+
+    <link rel="stylesheet" href="index.css">
+    <title>Project 2-taskes</title>
+    
+</head>
+<body dir="rtl" id="body_task">
+    <div class="container-fluid">
+        <!-- nav -->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+            <a class="navbar-brand text-light mx-5" href="index.html" style="font-family: 'Permanent Marker', cursive;" onmouseover="playAudio()">javaScript</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active text-light" href="index.html"onmouseover="playAudio()">אודות  <span class="sr-only">(current)</span></a>
+               
+                <a class="nav-item nav-link text-light " href="calculator.html" onmouseover="playAudio()">מחשבון</a>
+                
+                <a class="nav-item nav-link active text-light" href="play.html" onmouseover="playAudio()">משחק צורה וצבע <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link text-light" href="task.html" onmouseover="playAudio()">לוח משימות </a>
+              </div>
+            </div>
+          </nav>
+
+<div class="col-12"><h1 class="mt-5 text-center s">לוח המשימות שלי</h1></div>
+    <div class="row">
+        <div class="col-4"><input type="text" placeholder="הקלד שם משימה" id="filter"><button class="btn-dark" onclick="Filter()">סנן</button><br><button class="btn-dark  mt-4" onclick="Unfilter()">בטל סינון</button></div>
+        <div class="col-4"><div class="border rounded text-right" id="diva">
+            <input type="text" placeholder="שם המשימה" class="text-right mt-3 btn-block name" id="name" > <br>
+            <input type="text" placeholder="המשימה" class="text-right mt-3 block btn-block task" id="task" > <br>
+            <input type="date"  class="text-right mt-3 btn-block date" id="date"> </div></div>
+           
+        <div class="col-4 text-right"><button class="btn-dark buttonk ">העבר משימה ללוח השנתי</button></div></div>
+<div class="col-12 text-center m-2  "><h3>ריכוז משימות שנתי</h3></div>
+<div class="row text-right ">
+    <div class="col-3 border border-dark div1 Main_Div"><h5 class="text-center className">ינואר</h5></div> 
+    <div class="col-3 border border-dark div2 Main_Div"><h5 class="text-center className">פברואר</h5></div> 
+    <div class="col-3 border border-dark div3 Main_Div"><h5 class="text-center className">מרץ</h5></div> 
+    <div class="col-3 border border-dark div4 Main_Div"><h5 class="text-center className">אפריל</h5></div> 
+</div>
+<div class="row text-right  ">
+    <div class="col-3 border border-dark div5 Main_Div"><h5 class="text-center className">מאי</h5></div> 
+    <div class="col-3 border border-dark div6 Main_Div "><h5 class="text-center className">יוני</h5></div> 
+    <div class="col-3 border border-dark div7 Main_Div"><h5 class="text-center className">יולי</h5></div> 
+    <div class="col-3 border border-dark div8 Main_Div"><h5 class="text-center className">אוגוסט</h5></div> 
+</div>
+<div class="row text-right  ">
+    <div class="col-3 border border-dark div9 Main_Div"><h5 class="text-center className">ספטמבר</h5></div> 
+    <div class="col-3 border border-dark div10 Main_Div"><h5 class="text-center className">אוקטובר</h5></div> 
+    <div class="col-3 border border-dark div11 Main_Div"><h5 class="text-center className">נובמבר</h5></div> 
+    <div class="col-3 border border-dark div12 Main_Div"><h5 class="text-center className">דצמבר</h5></div> 
+</div>
+</div>
+<audio id="myAudio">
+    <source src="צלילים/מתג_3.mp3" type="audio/mpeg">
+  </audio>
+<script src="jquery-3.5.1.min.js"></script>
+    <script src="task.js"></script>
+    
+</body>
+</html>
